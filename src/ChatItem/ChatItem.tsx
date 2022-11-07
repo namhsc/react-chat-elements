@@ -68,7 +68,7 @@ const ChatItem: React.FC<IChatItemProps> = ({
       onClick={handleOnClick}
       onContextMenu={props.onContextMenu}
     >
-      <div className='rce-citem' onDragOver={onDragOver} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
+      <div className='rce-citem namhsc' onDragOver={onDragOver} onDragEnter={onDragEnter} onDragLeave={onDragLeave} onDrop={onDrop}>
         {!!props.onDragComponent && onDrag && props.onDragComponent(props.id)}
         {((onDrag && !props.onDragComponent) || !onDrag) && [
           <div className={classNames('rce-citem-avatar', { 'rce-citem-status-encircle': statusColorType === 'encircle' })}>
